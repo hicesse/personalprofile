@@ -1,0 +1,105 @@
+body {
+    background-color: #113b8d;
+    /* Change this to your desired color */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-container {
+    position: relative;
+    width: 360px;
+    /* Set the width of the container */
+    height: 200px;
+    /* Set the height of the container */
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-img {
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    border-radius: 50%;
+
+}
+
+
+.text-center {
+    color: aqua;
+    /* Change this to your desired color */
+    z-index: 2;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #fcf9f9,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000,
+        1px 1px 0 #050505;
+    /* This creates a black outline */
+
+}
+
+.deskripsi {
+    color: white;
+    /* Change this to your desired color */
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* This creates a black outline */
+}
+
+
+#judul {
+    background-color: #fcf9f9;
+}
+
+#content {
+    background-color: yellow;
+}
+
+footer {
+    background-color: #fcf9f9;
+    text-align: center;
+    padding: 10px;
+}
+
+#sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    background-color: #0af751;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+
+.sosmed a img:hover {
+    position: absolute;
+    background-color: #f7f7f7;
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+
