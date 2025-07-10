@@ -30,7 +30,8 @@ nav {
     background-color: var(--color-base);
     height: 7vh;
     display: flex;
-    justify-content: center;
+    width: auto;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
 }
@@ -42,14 +43,15 @@ nav {
 .menu,
 .close {
     display: none;
-    fill: var(--def-color);
+    filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(348%) hue-rotate(314deg) brightness(99%) contrast(95%);
+
 }
 
 .container {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #5B2C18;
+    background-color: var(--color-base);
     
 }
 
@@ -69,25 +71,42 @@ nav a {
 }
 
 a:hover{
-    background-color: var(--color-base-dark);
+    background-color:var(--color-base-dark);
     transition: 0.3799s;
 }
 
     
 @media (max-width: 600px) {
+    
     .container{
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
         top:0;
-        right: 0;
+        right: -100%;
         z-index: 10;
-        width: 80vw;
+        width: 52vw;
         box-shadow: -5px 0 5px var(--color-base-dark);
+        transition: 0.75s ease-out; 
     }
 
     nav a {box-sizing: border-box;
-    height: auto;}
-}
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;}
+
     
+.close, .menu{
+    margin: 1rem 1rem 0.5rem 1rem;
+    fill: var(--color-id);
+    display: block;
+}
+
+
+#box:checked ~ .container{
+    right: 0;
+    transition: 0.6s ease-out;
+
+}
+}
