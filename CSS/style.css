@@ -1,0 +1,431 @@
+/* desktop 
+@media (min-width: 1440px){
+
+}
+
+@media (min-width: 1024px) {
+    
+} */
+/* mobile */
+:root {
+    --color-base: #6B402D;
+    --color-base-dark: #5B2C18;
+    --color-id: #4159BC;
+    --def-color: #F8EDE5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    background-color: var(--def-color);
+}
+
+
+nav {
+    background-color: var(--color-base);
+    height: 7vh;
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+#box {
+    display: none;
+}
+
+#menu,
+#close {
+    display: none;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(348%) hue-rotate(314deg) brightness(99%) contrast(95%);
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-base);
+}
+
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    background-color: var(--color-base);
+    padding: 0 20px;
+    color: var(--def-color);
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.nav-text:hover {
+    background-color: var(--color-base-dark);
+    transition: 0.3799s;
+}
+
+.konten-kontener {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex: 1 0 1;
+    justify-content: space-between;
+    margin: 0 2.2rem 0 2.2rem;
+}
+
+.konten-kiri {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    max-width: 500px;
+    height: auto;
+    margin-top: 2.2rem;
+}
+
+.profile {
+
+    font-family: 'comic sans ms', sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+
+
+
+}
+
+.profile .bg-container {
+    width: 100%;
+    max-width: 500px;
+    height: 37vh;
+    max-height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+
+.profile .bg-container img {
+    border-radius: 2rem 0 2rem 0;
+    border: 3px solid var(--color-base-dark);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile .bg-container .main-container {
+
+    position: absolute;
+    width: 10vw;
+    max-width: 80px;
+    height: auto;
+    bottom: -2.3rem;
+
+
+}
+
+.profile .main-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+/*tulisannnnn*/
+.profile .info {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 2rem 10% 1.5rem 10%;
+    color: var(--def-color);
+    text-shadow:
+        /* Outline di semua arah */
+        -1px -1px 0 var(--color-base-dark),
+        1px -1px 0 var(--color-base-dark),
+        -1px 1px 0 var(--color-base-dark),
+        1px 1px 0 var(--color-base-dark),
+        /* Drop shadow untuk depth */
+        2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.info p {
+    text-align: center;
+    font-size: larger;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* pemisah keduanya */
+
+
+/* KONTEN 1 kiri */
+.kontener-kiri-1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 0 1;
+    width: 100%;
+}
+
+.kiri-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--color-base);
+    color: var(--def-color);
+    font-family: 'comic sans ms', sans-serif;
+    font-size: large;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.kontener-kiri-2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1 0 1;
+    width: 100%;
+    padding: 10px;
+    max-width: 500px;
+    background-color: var(--color-id);
+    margin: 0.7rem 0;
+
+}
+
+.kontener-kiri-2 p {
+    font-family: 'comic sans ms', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: var(--def-color);
+
+}
+
+.kiri-2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex: 1 0 1;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    margin: 0.7rem 0;
+    color: var(--def-color);
+
+}
+
+.kiri-2-bahasa {
+    width: 10vw;
+    max-width: 80px;
+    height: auto;
+}
+
+.kiri-2-bahasa img:hover {
+    filter: none;
+    transition: 0.6s ease-out;
+
+}
+
+.kiri-2-bahasa img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
+
+
+/*RIGHT*/
+/*KANAAANNN*/
+/*BUKAN KIRI*/
+
+.konten-kanan {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    max-width: 500px;
+    height: auto;
+    margin-top: 2.2rem;
+    min-width: 0;
+    /* Mencegah overflow */
+}
+
+/*KONTEN kanan PERTAMA*/
+
+.kontener-kanan-1 {
+    padding: 2rem;
+    margin-top: 2rem;
+    /* Sesuaikan dengan posisi aside */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: end;
+
+}
+
+.kanan-1-intro {
+    display: flex;
+    width: 200px;
+    height: auto;
+    padding: 1%;
+    /*bwnwerin nnti*/
+    /*color*/
+    color: var(--def-color);
+    background-color: var(--color-id);
+    /*teks*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.kanan-1-dot {
+    margin: 0 7px 0 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-base-dark);
+}
+
+
+/*konten 2 knan*/
+
+
+.kontener-kanan-2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    margin: 7vh 2% 2vh 0;
+    background-color: var(--color-base-dark);
+}
+
+
+
+/*ANDROID STYLE*/
+
+
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 52vw;
+        box-shadow: -3px 0 5px var(--color-base-dark);
+        transition: 0.75s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    #close,
+    #menu {
+        margin: 1rem 1rem 0.5rem 1rem;
+        fill: var(--color-id);
+        display: block;
+    }
+
+
+    #box:checked~.container {
+        right: 0;
+        transition: 0.6s ease-out;
+
+    }
+
+
+    .main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    /* gambar */
+    .profile {
+
+        font-family: 'comic sans ms', sans-serif;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        margin: 2.2rem 3rem;
+        z-index: 0;
+
+
+
+    }
+
+    .profile .bg-container {
+
+        width: 100%;
+        height: 23vh;
+        max-height: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+    }
+
+
+    .profile .bg-container img {
+        border-radius: 2rem 0 2rem 0;
+        border: 3px solid var(--color-base-dark);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile .bg-container .main-container {
+
+        position: absolute;
+        width: 10vw;
+        max-width: 150px;
+        min-width: 70px;
+        height: auto;
+        bottom: -2.3rem;
+
+
+    }
+
+    .profile .main-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+
+    /* konten kanan 1 */
+    .konten-kanan-1 {
+        width: 55vw;
+    }
+}

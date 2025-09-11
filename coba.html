@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,
+        td,
+        table {
+            border: 2px solid;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            width: 30vw;
+            height: 10vh;
+            max-height: 200px;
+            max-width: 200px;
+        }
+
+        table {
+            margin: 2rem;
+        }
+
+        tr:hover,
+        td:hover,
+        table:hover {
+            color: red;
+
+        }
+        table{
+            rotate: 90deg;
+        }
+        p{
+            rotate: -90deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+    <table>
+        <tr>
+            <td colspan="2">A</td>
+
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+</div>
+<div class="table">
+    <table>
+        <tr>
+            <td rowspan="2"> A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+</div>
+    <table>
+        <tr>
+            <td colspan="2">A</td>
+            <td rowspan="3">E</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td colspan="2">D</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="3"> <p>A</p></td>
+            <td><p>B</p></td>
+            <td rowspan="3"><p>C</p></td>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><p>D</p></td>
+            <td colspan="3"><p>E</p></td>
+        </tr>
+
+        <tr>
+            <td><p>F</p></td>
+            <td><p>G</p></td>
+            <td><p>H</p></td>
+        </tr>
+    </table>
+</body>
+
+</html>
