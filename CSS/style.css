@@ -152,6 +152,7 @@ nav a {
 .profile .info {
     position: relative;
     display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -324,6 +325,7 @@ nav a {
 
 
 @media (max-width: 900px) {
+    
 
     .container {
         flex-direction: column;
@@ -360,11 +362,30 @@ nav a {
 
     }
 
-
-    .main {
+    .konten-kontener {
+        align-items: center;
+        justify-content: center;
         display: flex;
         position: relative;
         flex-direction: column;
+        width: 100%;
+        margin: 0 0;
+        /* background-color: #5B2C18; */
+    }
+
+    .konten-kiri {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex: 1 0 1;
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        /* background-color: #18ff52; */
+
     }
 
     /* gambar */
@@ -374,10 +395,12 @@ nav a {
         display: flex;
         position: relative;
         flex-direction: column;
+        align-items: center;
         height: auto;
-        width: 80%;
-        margin: 2.2rem 3rem;
+        width: 100%;
+        margin: 2.2rem 0;
         z-index: 0;
+        /* background-color: #4159BC; */
 
 
 
@@ -387,7 +410,7 @@ nav a {
 
         width: 100%;
         height: 23vh;
-        max-height: 400px;
+        max-height: 250px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -424,8 +447,60 @@ nav a {
     }
 
 
+    .kontener-kiri-1 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex: 1 0 1;
+        width: 100%;
+    }
+
+    .kiri-1 {
+        position: relative;
+        width: calc(100% - 20px);
+        height: auto;
+        padding: 10px;
+        background-color: var(--color-base);
+        color: var(--def-color);
+        font-family: 'comic sans ms', sans-serif;
+        font-size: large;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .kontener-kiri-2 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex: 1 0 1;
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: var(--color-id);
+
+    }
+
+    .kiri-2 {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex: 1 0 1;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        margin: 0.7rem 0;
+        color: var(--def-color);
+
+    }
+
     /* konten kanan 1 */
     .konten-kanan-1 {
         width: 55vw;
+    }
+
+    .kanan-1-dot {
+        margin: 0 7px 0 0;
+        display: flex;
+        width: 10%;
+        height: 0%;
+        background-color: var(--color-base-dark);
     }
 }

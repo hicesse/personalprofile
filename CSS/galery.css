@@ -88,12 +88,12 @@ nav a {
     flex-direction: column;
 }
 @property --angle{
-    syntax: "<--angle>";
+    syntax: '<angle>';
     initial-value: 0deg;
     inherits: false;
 }
 
-.card::after, .card::before {
+.card:hover::after, .card:hover::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -102,9 +102,10 @@ nav a {
     z-index: -1;
     left: 50%;
     top: 50%;
-    translate: -50% -50%;
-    background-image: conic-gradient(from var(--angle), transparent 85%, blue);
+    translate:-50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, red, yellow, blue);
     animation: spin 3s infinite linear;
+    will-change: transform;
 }
 
 .card::before{
@@ -112,15 +113,9 @@ nav a {
 }
 
 @keyframes spin {
-    from {
-        --angle: 0deg;
-    }
-
-   
-    to {
-       --angle: 359deg;
-    }
-}
+       from { --angle: 0deg; }
+       to { --angle: 360deg; }
+   }
 
 .gambar-kontener {
     width: 100%;
