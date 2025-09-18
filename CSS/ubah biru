@@ -103,7 +103,7 @@ nav a {
     left: 50%;
     top: 50%;
     translate:-50% -50%;
-    background-image: conic-gradient(from var(--angle), transparent 80%, red, yellow, blue);
+    background-image: conic-gradient(from var(--angle), transparent 80%, blue);
     animation: spin 3s infinite linear;
     will-change: transform;
 }
